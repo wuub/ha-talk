@@ -53,6 +53,9 @@ map:
 # Track the sun
 sun:
 
+mqtt:
+  embedded:
+
 # Weather prediction
 sensor:
   - platform: yr
