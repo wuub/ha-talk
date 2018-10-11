@@ -21,8 +21,16 @@ ota:
 
 light:
   - platform: fastled_clockless
-    chipset: WS2811
+    chipset: WS2812B
     pin: D1
     num_leds: 20
     rgb_order: GRB
     name: "Spark 01"
+    effects:
+      - fastled_random_twinkle:
+      - fastled_twinkle:
+      - fastled_fireworks:
+      - fastled_rainbow:
+      - fastled_color_wipe: 
+      - fastled_scan:
+      - fastled_flicker: 

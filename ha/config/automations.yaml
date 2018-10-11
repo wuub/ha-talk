@@ -1,1 +1,12 @@
-[]
+- id: '1539270519930'
+  alias: Relay
+  trigger:
+  - entity_id: binary_sensor.button_01
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      entity_id: switch.relay_01
+    service: switch.toggle

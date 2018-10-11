@@ -72,3 +72,13 @@ cloud:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+
+
+switch:
+  - platform: flux
+    lights:
+     - light.spark_01
+
+device_tracker:
+  - platform: bluetooth_le_tracker
+
