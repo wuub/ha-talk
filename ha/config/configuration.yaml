@@ -54,8 +54,10 @@ map:
 sun:
 
 mqtt:
-  embedded:
-
+  broker: 127.0.0.1
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  discovery: true  
 # Weather prediction
 sensor:
   - platform: yr
